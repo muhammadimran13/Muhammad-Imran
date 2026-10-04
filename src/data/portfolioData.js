@@ -38,7 +38,7 @@ export const services = [
 ];
 
 export const projects = [
-  { emoji: "🎬", label: "Personal-Portfolio", title: "MERN Zaman-Studio", description: "A modern videographer portfolio with cinematic visuals, service packages, project showcase, client testimonials, and contact features.", features:[
+  { emoji: "🎬", label: "Personal-Portfolio", title: "Zaman-Studio", description: "A modern videographer portfolio with cinematic visuals, service packages, project showcase, client testimonials, and contact features.", features:[
   "Cinematic videography portfolio",
   "Professional services & pricing",
   "Project showcase with video gallery",
