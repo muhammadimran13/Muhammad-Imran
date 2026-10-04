@@ -39,7 +39,7 @@ export default function Contact() {
           </p>
         </motion.div>
 
-        <div style={{ display: "grid", gridTemplateColumns: "1fr 1.5fr", gap: 60, alignItems: "start" }}>
+        <div className="rg-hero" style={{ display: "grid", gridTemplateColumns: "1fr 1.5fr", gap: 60, alignItems: "start" }}>
           {/* Info */}
           <motion.div initial={{ opacity: 0, x: -30 }} animate={inView ? { opacity: 1, x: 0 } : {}} transition={{ duration: 0.6 }}>
             <h3 style={{ fontFamily: "'Syne',sans-serif", fontSize: 22, fontWeight: 700, marginBottom: 8 }}>Get in touch</h3>
@@ -63,9 +63,9 @@ export default function Contact() {
           </motion.div>
           {/* Form */}
           <motion.form onSubmit={submit} initial={{ opacity: 0, x: 30 }} animate={inView ? { opacity: 1, x: 0 } : {}} transition={{ duration: 0.6, delay: 0.2 }}
-            style={{ background: "var(--glass)", border: "1px solid var(--border)", borderRadius: 20, padding: 36 }}
+            className="form-box" style={{ background: "var(--glass)", border: "1px solid var(--border)", borderRadius: 20, padding: 36 }}
           >
-            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16, marginBottom: 16 }}>
+            <div className="rg-form" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16, marginBottom: 16 }}>
               {[{ name: "name", label: "Your Name", placeholder: "John Doe", type: "text" },
                 { name: "email", label: "Email Address", placeholder: "john@email.com", type: "email" }
               ].map(f => (

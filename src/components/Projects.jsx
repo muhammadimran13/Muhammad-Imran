@@ -16,7 +16,7 @@ export default function Projects() {
           <p style={{ fontSize: 16, color: "var(--text2)", maxWidth: 560, margin: "16px auto 0", lineHeight: 1.7 }}>Real-world applications built with the MERN stack and modern web technologies.</p>
         </motion.div>
 
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(2,1fr)", gap: 24 }}>
+        <div className="rg-2" style={{ display: "grid", gridTemplateColumns: "repeat(2,1fr)", gap: 24 }}>
           {projects.map((p, i) => (
             <motion.div key={i} initial={{ opacity: 0, y: 40 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.6, delay: i * 0.1 }}
               whileHover={{ y: -8, boxShadow: "var(--glow)" }}

@@ -17,7 +17,7 @@ export default function Footer() {
   return (
     <footer style={{ background: "var(--bg2)", borderTop: "1px solid var(--border)", padding: "60px 5% 32px" }}>
       <div style={{ maxWidth: 1200, margin: "0 auto" }}>
-        <div style={{ display: "grid", gridTemplateColumns: "2fr 1fr 1fr", gap: 60, marginBottom: 48 }}>
+        <div className="rg-footer" style={{ display: "grid", gridTemplateColumns: "2fr 1fr 1fr", gap: 60, marginBottom: 48 }}>
           {/* Brand */}
           <div>
             <div style={{ fontFamily: "'Syne',sans-serif", fontSize: 24, fontWeight: 800, marginBottom: 16 }} className="grad-text">Muhammad Imran</div>
@@ -59,7 +59,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div style={{ paddingTop: 24, borderTop: "1px solid var(--border)", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+        <div className="footer-bottom" style={{ paddingTop: 24, borderTop: "1px solid var(--border)", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
           <div style={{ fontSize: 13, color: "var(--text3)" }}>
             © 2024 <span style={{ color: "var(--purple3)" }}>Muhammad Imran</span>. All rights reserved.
           </div>

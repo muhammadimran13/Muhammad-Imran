@@ -30,10 +30,10 @@ export default function GitHub() {
         </motion.div>
 
         <motion.div initial={{ opacity: 0, y: 30 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.6, delay: 0.2 }}
-          style={{ background: "var(--glass)", border: "1px solid var(--border)", borderRadius: 20, padding: 36, position: "relative", overflow: "hidden" }}
+          style={{ background: "var(--glass)", border: "1px solid var(--border)", borderRadius: 20, padding: 36, position: "relative", overflow: "hidden" }} className="gh-box"
         >
           {/* Stats row */}
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(4,1fr)", gap: 20, marginBottom: 36 }}>
+          <div className="rg-4" style={{ display: "grid", gridTemplateColumns: "repeat(4,1fr)", gap: 20, marginBottom: 36 }}>
             {githubStats.map((s, i) => (
               <div key={i} style={{ textAlign: "center", background: "var(--bg3)", border: "1px solid var(--border)", borderRadius: 12, padding: 20 }}>
                 <div style={{ fontFamily: "'Syne',sans-serif", fontSize: 32, fontWeight: 800 }} className="grad-text">{s.num}</div>

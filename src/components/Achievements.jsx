@@ -13,7 +13,7 @@ export default function Achievements() {
             Core <span className="grad-text">Strengths</span>
           </h2>
         </motion.div>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(4,1fr)", gap: 20 }}>
+        <div className="rg-4" style={{ display: "grid", gridTemplateColumns: "repeat(4,1fr)", gap: 20 }}>
           {achievements.map((a, i) => (
             <motion.div key={i} initial={{ opacity: 0, y: 30 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.5, delay: i * 0.1 }}
               whileHover={{ y: -6, boxShadow: "var(--glow)", borderColor: "var(--border2)" }}

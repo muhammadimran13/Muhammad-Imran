@@ -15,7 +15,7 @@ export default function Hero() {
         <div className="blob" style={{ width: 300, height: 300, background: "#a855f7", top: "50%", left: "50%", transform: "translate(-50%,-50%)", animationDelay: "-6s" }} />
       </div>
 
-      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 80, alignItems: "center", maxWidth: 1200, width: "100%", position: "relative", zIndex: 1 }}>
+      <div className="rg-hero" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 80, alignItems: "center", maxWidth: 1200, width: "100%", position: "relative", zIndex: 1 }}>
         {/* Left */}
         <motion.div initial={{ opacity: 0, x: -50 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8, ease: "easeOut" }}>
           <motion.div className="avail-badge" initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }} style={{ marginBottom: 28 }}>
@@ -61,7 +61,7 @@ export default function Hero() {
         <motion.div initial={{ opacity: 0, x: 50 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8, delay: 0.2 }} style={{ display: "flex", justifyContent: "center" }}>
           <div style={{ position: "relative" }}>
             {/* Spinning ring */}
-            <div style={{ width: 320, height: 320, borderRadius: "50%", padding: 3, position: "relative" }}>
+            <div className="hero-circle" style={{ width: 320, height: 320, borderRadius: "50%", padding: 3, position: "relative" }}>
               <div style={{ position: "absolute", inset: -2, borderRadius: "50%", background: "linear-gradient(135deg,#7c3aed,#2563eb,#a855f7,#7c3aed)", animation: "spinRing 4s linear infinite", opacity: 0.7 }} />
               <div style={{ width: "100%", height: "100%", borderRadius: "50%", background: "linear-gradient(135deg,#1a1030,#0d1a35)", display: "flex", alignItems: "center", justifyContent: "center", position: "relative", overflow: "hidden", zIndex: 1 }}>
                 <div style={{ textAlign: "center", color: "var(--text2)" }}>

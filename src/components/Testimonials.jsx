@@ -23,7 +23,7 @@ export default function Testimonials() {
         </motion.div>
 
         <div style={{ position: "relative", overflow: "hidden" }}>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 24 }}>
+          <div className="rg-3" style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 24 }}>
             {testimonials.map((t, i) => (
               <motion.div key={i} initial={{ opacity: 0, y: 30 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.5, delay: i * 0.1 }}
                 style={{ background: idx === i ? "rgba(124,58,237,0.06)" : "var(--glass)", border: `1px solid ${idx === i ? "var(--border2)" : "var(--border)"}`, borderRadius: 20, padding: 32, transition: "all 0.4s" }}

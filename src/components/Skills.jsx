@@ -15,7 +15,7 @@ export default function Skills() {
           <p style={{ fontSize: 16, color: "var(--text2)", maxWidth: 560, margin: "0 auto", lineHeight: 1.7 }}>A comprehensive overview of my technical capabilities and what I bring to every project.</p>
         </motion.div>
 
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 20 }}>
+        <div className="rg-3" style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 20 }}>
           {skills.map((s, i) => (
             <motion.div key={i} className="glass-card" style={{ padding: 28, position: "relative", overflow: "hidden" }}
               initial={{ opacity: 0, y: 30 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.5, delay: i * 0.08 }}
